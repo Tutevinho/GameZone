@@ -107,12 +107,3 @@
 * ###### Sistema de compravenda: videojocs, consoles i accessoris.
 * ###### Pàgina web i aplicació: reserves, informació, gestió de comptes; integració amb pagaments.
 * ###### Proves finals: simulació d’usuaris, ajustaments segons resultats.
-
-#### Fase 3: Màrqueting i obertura (opcional)
-
-###### Objectiu: Atraure clients i promocionar el Gaming Center.
-
-* ###### Creació de perfils a xarxes socials.
-* ###### Campanyes de publicitat local.
-* ###### Tornejos i esdeveniments d’inauguració.
-* ###### Feedback dels primers usuaris per millores.
