@@ -4,11 +4,11 @@
 
 # 
 
-######  L’espai on es vol desenvolupar el projecte és un antic restaurant que va tancar per manca de rendibilitat. Actualment, la propietària disposa d’una sala gran buida i vol donar-li un nou ús transformant-la en un Gaming Center, un espai on els usuaris puguin jugar a videojocs en xarxa o individualment amb equips d’alt rendiment.
+###### L’espai on es vol desenvolupar el projecte és un antic restaurant que va tancar per manca de rendibilitat. Actualment, la propietària disposa d’una sala gran buida i vol donar-li un nou ús transformant-la en un Gaming Center, un espai on els usuaris puguin jugar a videojocs en xarxa o individualment amb equips d’alt rendiment.
 
 # 
 
-######  El problema o necessitat que es vol cobrir és la manca d’espais locals per a l’oci digital i el joc en xarxa, especialment per a joves i aficionats als eSports. Aquest projecte afecta tant als possibles clients (jugadors) com als gestors del negoci, que necessiten una solució tecnològica completa, segura i fàcil de mantenir.
+###### El problema o necessitat que es vol cobrir és la manca d’espais locals per a l’oci digital i el joc en xarxa, especialment per a joves i aficionats als eSports. Aquest projecte afecta tant als possibles clients (jugadors) com als gestors del negoci, que necessiten una solució tecnològica completa, segura i fàcil de mantenir.
 
 # 
 
