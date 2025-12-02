@@ -49,3 +49,11 @@
 * ###### Implementar mesures bàsiques de ciberseguretat.
 
 # 
+
+* ###### Afegir diferents dispositius diferents, com ara màquines recreatives 'retro', i ulleres de realitat virtual.
+
+# 
+
+* ###### Implementar mesures bàsiques de ciberseguretat.
+
+# 
