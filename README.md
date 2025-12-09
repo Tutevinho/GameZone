@@ -33,7 +33,7 @@
 
 ###### Objectiu: Preparar l’espai físic i tecnològic perquè sigui operatiu.
 
-* ###### Adequació del local: pintura, il·luminació, climatització i distribució de zones (ordinadors, VR, màquines retro, esports, descans).
+* ###### Adequació del local: pintura, il·luminació, climatització i distribució de zones (ordinadors, VR, màquines retro, streaming, esports, descans).
 * ###### Instal·lació de xarxa: Internet d’alta velocitat, routers, switches, punts Wi-Fi, xarxa LAN amb baix ping.
 * ###### Instal·lació de maquinari: ordinadors d’alt rendiment, consoles, VR, màquines recreatives.
 * ###### Serveis al núvol: gestió de dades, còpies de seguretat, control remot.
