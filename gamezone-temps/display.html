@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background:#000; color:#fff; font-family:sans-serif;
+           display:flex; align-items:center; justify-content:center;
+           height:100vh; margin:0; flex-direction:column; }
+    #t { font-size:22vw; font-weight:bold; }
+    #s { font-size:4vw; color:#888; margin-top:10px; }
+    .warn    { color:#f59e0b !important; }
+    .expired { color:#ef4444 !important; animation: blink .6s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
+  </style>
+</head>
+<body>
+  <div id="t">--:--</div>
+  <div id="s">Sense sessió</div>
+  <audio id="timbre" src="timbre.mp3" preload="auto"></audio>
+<script>
+  // Canviar el número següent per l'ID del dispositiu (1-16)
+  const id = new URLSearchParams(location.search).get('puesto') || '1';
+  const SERVIDOR = 'http://192.168.1.1:8000';
+  let sonado = false;
+
+
+  setInterval(async () => {
+    try {
+      const r = await fetch(`${SERVIDOR}/state`);
+      const state = await r.json();
+      const expira = state[id]?.expira || 0;
+      const seg = Math.max(0, Math.round((expira - Date.now()) / 1000));
+      const m = String(Math.floor(seg/60)).padStart(2,'0');
+      const s = String(seg%60).padStart(2,'0');
+
+
+      document.getElementById('t').textContent = expira ? `${m}:${s}` : '--:--';
+      document.getElementById('t').className =
+        seg === 0 && expira ? 'expired' : seg < 300 ? 'warn' : '';
+      document.getElementById('s').textContent =
+        seg === 0 && expira ? 'Temps esgotat!' :
+        seg < 300 && expira ? 'Menys de 5 min' :
+        state[id]?.nombre || `Lloc ${id}`;
+
+
+      if (seg === 0 && expira && !sonado) {
+        document.getElementById('timbre').play();
+        sonado = true;
+      }
+      if (seg > 0) sonado = false;
+    } catch(e) {}
+  }, 1000);
+</script>
+</body>
+</html>
